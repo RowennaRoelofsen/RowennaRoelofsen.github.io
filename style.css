@@ -1,0 +1,443 @@
+/*DESKTOP*/
+
+@media only screen and (min-width: 1024px) {
+
+body {
+    font-size: 1em;
+    font-family: 'Open sans';
+    line-height: 140%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+h2 {
+    background-color: #FFB84D;
+    color: white;
+    padding: 1em;
+    border-radius: 2em;
+    box-shadow:10px 10px 10px 0px #CCCBCA;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+/*header*/
+
+body > header {
+    background-color: #DCDCDC;
+    border-radius: 2em;
+    box-shadow:10px 10px 10px 0px #CCCBCA;
+    position: relative;
+    padding: 2em;
+    text-align: center
+
+}
+
+body > header > h1 {
+    text-shadow: 0 0 3px #000000;
+    text-transform: uppercase;
+    font-size: 4em
+    font-weight: 2000;
+    -webkit-animation: scale 5s infinite;
+}
+
+
+body > header > img {
+    width: 60%;
+}
+
+nav {
+	padding: 0.5em;
+}
+
+nav ul {
+    margin: 0.5em;
+	text-align: center;
+}
+
+nav ul li {
+    display: inline-flex;
+}
+
+nav ul li a {
+    padding: 10px 25px;
+    text-decoration: none;
+	font-size: 0.8em;
+	font-weight: 700;
+	color: #333333;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+     background: #CDCDCD;
+}
+
+nav ul li a:active {
+    background-color: #FFB84D;
+}
+
+/*einde header*/
+
+
+/*main*/
+
+body > main > article >  header > h1 {
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 3px #000000;
+    font-size: 2.5em;
+}
+
+body > main > article >  footer {
+    background: #DCDCDC;
+    font-size: 0.8em;
+}
+
+img {
+    width: 60%;
+}
+
+/*einde main*/
+
+
+.related > article {
+    width: 19%;
+    float: left;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    border: 0.2em solid #DCDCDC;
+    box-sizing: border-box;
+}
+
+section.relatedd > article {
+    width: 33.33%;
+    float: left;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    border: 0.2em solid #DCDCDC;
+    box-sizing: border-box;
+}
+
+
+aside {
+    clear: both;
+}
+
+body > footer {
+    background-color: #DCDCDC;
+    border-radius: 2em;
+    box-shadow:10px 10px 10px 0px #CCCBCA;
+    position: relative;
+    padding: 0.1em;
+    text-align: left;
+}
+
+body > footer > section {
+    width: 20%;
+    float: left;
+    margin-bottom: 2em;
+    border: 0.2em solid #DCDCDC;
+    box-sizing: border-box
+}
+
+
+
+
+/*@*/
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes scale {
+    40% {font-size: 3em;}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*TABLET*/
+
+@media only screen and (min-width: 501px )and (max-width: 1023px) {
+body {
+    background-color: gray;
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Open sans';
+    line-height: 140%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h2 {
+    background-color: #FFB84D;
+    color: white;
+    padding: 1em;
+    border-radius: 2em;
+    box-shadow:10px 10px 10px 0px #CCCBCA;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+/*header*/
+
+body > header {
+    background-color: #DCDCDC;
+    border-radius: 2em;
+    box-shadow:10px 10px 10px 0px #CCCBCA;
+    position: relative;
+    padding: 2em;
+    margin: 2em;
+    text-align: center;
+}
+
+body > header > h1 {
+    text-shadow: 0 0 3px #000000;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    -webkit-animation: scale 5s infinite;
+}
+
+
+body > header > img {
+    width: 60%;
+}
+
+nav {
+	padding: 0.5em;
+}
+
+nav ul {
+    margin: 0.5em;
+	text-align: center;
+}
+
+nav ul li {
+    display: inline-flex;
+}
+
+nav ul li a {
+    padding: 5px 12px;
+    text-decoration: none;
+	font-size: 0.8em;
+	font-weight: 700;
+	color: #333333;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+     background: #CDCDCD;
+}
+
+nav ul li a:active {
+    background-color: #FFB84D;
+}
+
+/*einde header*/
+
+/*main*/
+
+body > main > article >  header > h1 {
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 3px #000000;
+    font-size: 2.5em;
+}
+
+body > main > article >  footer {
+    background: #DCDCDC;
+    font-size: 0.8em;
+}
+
+img {
+    width: 100%;
+}
+
+/*einde main*/
+
+.related > article {
+    margin-bottom: 1em;
+    border: 0.2em solid #DCDCDC;
+    box-sizing: border-box;
+
+}
+
+aside {
+    clear: both;
+}
+
+body > footer {
+    background-color: #DCDCDC;
+    border-radius: 2em;
+    box-shadow:10px 10px 10px 0px #CCCBCA;
+    position: relative;
+    padding: 0.1em;
+    text-align: left;
+}
+
+/*@*/
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes scale {
+    40% {font-size: 1.5em;}
+}
+}
+
+
+
+
+
+
+
+
+
+
+/*MOBILE*/
+
+@media only screen and (max-width: 500px) {
+body {
+    background-color: blue;
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Open sans';
+    line-height: 140%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h2 {
+    background-color: #FFB84D;
+    color: white;
+    padding: 1em;
+    border-radius: 2em;
+    box-shadow:10px 10px 10px 0px #CCCBCA;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+/*header*/
+
+body > header {
+    background-color: #DCDCDC;
+    border-radius: 2em;
+    box-shadow:10px 10px 10px 0px #CCCBCA;
+    position: relative;
+    padding: 2em;
+    margin: 2em;
+    text-align: center;
+}
+
+body > header > p:first-of-type {
+    visibility: hidden;
+}
+
+body > header > h1 {
+    text-shadow: 0 0 3px #000000;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    -webkit-animation: scale 5s infinite;
+}
+
+
+body > header > img {
+    width: 60%;
+}
+
+nav {
+	padding: 0.5em;
+}
+
+nav ul {
+    margin: 0.5em;
+	text-align: left;
+}
+
+nav ul li {
+    display:inline-block;
+}
+
+nav ul li a {
+    padding: 5px 12px;
+    text-decoration: none;
+	font-size: 0.8em;
+	font-weight: 700;
+	color: #333333;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background: #CDCDCD;
+}
+
+nav ul li a:active {
+    background-color: #FFB84D;
+}
+
+/*einde header*/
+
+/*main*/
+
+body > main > article >  header > h1 {
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 3px #000000;
+    font-size: 2.5em;
+}
+
+body > main > article >  footer {
+    background: #DCDCDC;
+    font-size: 0.8em;
+}
+
+img {
+    width: 100%;
+}
+
+/*einde main*/
+
+.related > article {
+    margin-bottom: 1em;
+    border: 0.2em solid #DCDCDC;
+    box-sizing: border-box;
+
+}
+
+aside {
+    clear: both;
+}
+
+.relatedform > article {
+    margin-bottom: 1em;
+    border: 0.2em solid #DCDCDC;
+
+
+body > footer {
+   background-color: #DCDCDC;
+    border-radius: 2em;
+    box-shadow:10px 10px 10px 0px #CCCBCA;
+    position: relative;
+    padding: 0.1em;
+    text-align: left;
+}
+
+/*@*/
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes scale {
+    40% {font-size: 1.5em;}
+}
+}

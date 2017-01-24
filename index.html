@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Word filter</title>
+</head>
+
+
+<body>
+    <header>
+        <button class="toggleButton headerIcon">&#9776;</button>
+        <h1 class="pageTitle">Bericht</h1>
+        <nav class=menu>
+          <ul>
+            <li class="li"><a href="#">Home</a></li>
+            <li><a href="#">Profiel</a></li>
+            <li><a href="#">Mijn groep</a></li>
+            <li><a href="#">Y-BOCS</a></li>
+            <li><a href="#">Instellingen</a></li>
+            <li><a href="#">Afmelden</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <div class= "subHeader">
+        <button class="backButton headerIcon">&#8592;</button>
+        <h2 class= "subTitle">Bericht opstellen</h2>
+    </div>
+
+    <div class="pageIndicators">
+        <a href="index.html"><div class="circle checked"></div></a>
+        <a href="risico.html"><div class="circle"></div></a>
+        <a href="signalen.html"><div class="circle"></div></a>
+        <a href="overzicht.html"><div class="circle"></div></a>
+    </div>
+
+    <main>
+        <img src="img/abbeyroad.jpg" alt="photo preview" id="preview">
+        <p class="vraag">Wat heb je gedaan vandaag?</p>
+        <textarea id='text' placeholder="Typ je bericht hier in"></textarea>
+        <input class="button" id="submit" name="submit" type="submit" value="Volgende stap">
+        <div id="overlay"></div>
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+            <span class="close">x</span>
+            <div class="modal-content">
+                <p><span id="span-text">  </span></p>
+                <div class="modalButtons">
+                    <input class="button modalButton" id="berichtAanpassen" name="berichtAanpassen" type="submit" value="Bericht aanpassen">
+                    <input class="button modalButton" id="berichtPlaatsen" name="berichtPlaatsen" type="submit" value="Bericht toch plaatsen">
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+<script src="script.js"></script>
+<script src="berichtenPagina.js"></script>
+<script type='text/javascript' src='/JavaScriptSpellCheck/include.js'></script>
+</html>
+
+
+<!--BRONNEN
+* Modal: http://www.w3schools.com/howto/howto_css_modals.asp
+* Word restrict: http://stackoverflow.com/questions/26126076/how-to-restrict-certain-words-in-text-field-using-javascript
+* Spellingchcker: Javascriptspellcheck. (2004). JavaScript Spell Check JavaScript SpellCheck The intelligent cross-platform spellchecker solution using JavaScript , since 2004 [Code]. Geraadpleegd op 22 januari, 2017, van http://www.javascriptspellcheck.com/JavaScript_SpellChecking_Dictionaries
+-->

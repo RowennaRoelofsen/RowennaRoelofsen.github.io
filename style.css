@@ -1,0 +1,410 @@
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    margin: 0;
+}
+
+/*HEADER*/
+header {
+    text-align: center;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    clear: both;
+    height: 40px;
+}
+
+.pageTitle {
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 200;
+    height: calc(100% - 5px);
+    padding-top: 5px;
+    padding-right: 40px;
+}
+
+.toggleButton {
+    color: #9ea2a2;
+    border: 0;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    float: left;
+}
+
+.menu {
+    clear: both;
+    position: absolute;
+    transform: translateX(-1000px);
+    padding: 0;
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #b6dee1;
+    transition: all .9s;
+    text-align:left;
+    box-shadow: 1.5px 1.5px 1.5px #888888;
+}
+
+.toggle {
+    transform: translateX(0px);
+    transition: all .4s ease-in-out;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    list-style-type: none;
+    background-color: #b6dee1;
+    padding: 8px 8px 8px 16px;
+    transition: all .5s;
+    border-bottom: 1px solid white;
+}
+
+.menu li:active {
+    background-color: #78c6cc;
+}
+
+.headerIcon {
+    width: 40px;
+}
+
+
+/*SUBHEADER*/
+.subHeader {
+    display: flex;
+    background-color: lightgray;
+    clear: both;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.backButton {
+    color: #9ea2a2;
+    border: 0;
+    font-size:26px;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    background: none;
+}
+
+.subTitle {
+    margin: 0 auto;
+    padding: 8px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 200;
+    padding-right: 40px;
+}
+
+
+
+/*PAGE INDICATOR*/
+.pageIndicators {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.circle {
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 8px;
+    background: #ffffff;
+}
+
+.checked {
+    background: #d5c480;
+}
+
+
+
+/*MAIN*/
+main {
+    margin: 0 16px 16px 16px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+#preview {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.vraag {
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+#text {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.18);
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    resize: none;
+    height: 50px;
+    padding-top: 30px;
+}
+
+.button {
+    width: 100%;
+    max-width: 450px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #b6dee1;
+    border: none;
+    padding: 8px;
+    border-radius: 2px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.18);
+    margin-bottom: 16px;
+
+}
+
+.button:focus {
+    outline:0;
+    background-color: #78c6cc;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;  /*Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    width: 80%;
+    border-radius: 2px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    margin: 0 24px 24px 24px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+    float: right;
+    margin-right: 6px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal p {
+    clear: both;
+    margin-bottom: 16px;
+}
+
+
+#submit, #text {
+    width: 100%;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    margin: 0 auto;
+}
+
+.modalButton {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    white-space: normal;
+}
+
+
+#berichtAanpassen {
+    display: none;
+}
+
+
+#berichtPlaatsen {
+    display: none;
+    background-color: #9ea2a2;
+}
+
+
+/*SIGNALEN & RISICO'S*/
+
+.choices {
+    margin: 0 auto;
+    margin-bottom: 16px;
+
+}
+
+.choice {
+    width: 80%;
+    font-size: 80%;
+    font-weight: 200;
+    background-color: #d5c480;
+    border: none;
+    padding: 8px;
+    border-radius: 2px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.18);
+    white-space: normal;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.choice:last-of-type {
+    margin-bottom: 0;
+}
+
+
+.active {
+    outline:0;
+    background-color: #d8bb45;
+}
+
+
+/*OVERZICHT*/
+.choicesOverzicht {
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.userInput {
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+
+.img-holder {position: relative;}
+.img-holder .link {
+    position: absolute;
+    bottom: 10px; /*your button position*/
+    right: 10px; /*your button position*/
+}
+
+
+/*MEDIA QUERRIES*/
+
+@media only screen and (min-width : 768px) {
+    header {
+        height: auto;
+    }
+
+    .pageTitle {
+        padding: 0;
+    }
+    .toggleButton {
+        display: none;
+    }
+
+    .toggle {
+        transition: none;
+    }
+
+    .menu {
+        transform: none;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        transition: none;
+        text-align: center;
+        box-shadow: none;
+        clear: both;
+        position: relative;
+        background-color: #fff;
+    }
+
+    .menu ul {
+        display: flex;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        clear: both;
+       height: auto;
+        position: relative;
+    }
+
+    .menu li {
+        background-color: #fff;
+        transition: none;
+        border: none;
+    }
+
+    .menu li:active {
+        background-color: #fff;
+        text-decoration: underline;
+    }
+
+    .headerIcon {
+        width: 40px;
+    }
+
+    .modalButtons {
+        display: flex;
+        flex-direction: row;
+        }
+
+    .modalButton {
+        margin-top: 8px;
+        width: 50%;
+        font-size: 14px;
+        }
+    .modalButton:last-of-type {
+            margin-left: 12px;
+        }
+}
+
+
+
+/* BRONNEN
+Disney principle: Staging (make one stand out)
+slide: http://callmenick.com/post/slide-and-push-menus-with-css3-transitions
+
+Modal: http://www.w3schools.com/howto/howto_css_modals.asp
+Word restrict: http://stackoverflow.com/questions/26126076/how-to-restrict-certain-words-in-text-field-using-javascript
+*/
